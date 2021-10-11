@@ -19,7 +19,7 @@ spring:
         - id: review
           uri: http://localhost:8082
           predicates:
-            - Path=/reviews/**
+            - Path=/products/{productId}/reviews/**
 management:
   endpoints:
     web:
