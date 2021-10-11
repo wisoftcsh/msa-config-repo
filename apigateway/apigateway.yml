@@ -16,14 +16,10 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/products/**
-          filters:
-            - RewritePath=/products/(?<path>.*), /$\{path}
         - id: review
           uri: http://localhost:8082
           predicates:
             - Path=/products/{productId}/reviews/**
-          filters:
-            - RewritePath=/products/{productId}/reviews/(?<path>.*), /$\{path}
 
 management:
   endpoints:
