@@ -21,7 +21,7 @@ spring:
         - id: review
           uri: http://localhost:8082
           predicates:
-            - Path=/products/{productId}/reviews/**
+            - Path=/reviews/**
           filters:
             - RewritePath=/reviews/(?<path>.*), /$\{path}
 management:
