@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:23306/review?serverTimezone=UTC
+    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:10001/review?serverTimezone=UTC
     username: coupang
     password: coupang
   jpa:
