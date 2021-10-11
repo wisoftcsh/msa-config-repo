@@ -12,14 +12,14 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: product
-          uri: http://localhost:8081
-          predicates:
-            - Path=/products/**
         - id: review
           uri: http://localhost:8082
           predicates:
             - Path=/products/{id}/reviews/**
+        - id: product
+          uri: http://localhost:8081
+          predicates:
+            - Path=/products/**
 management:
   endpoints:
     web:
