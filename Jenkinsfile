@@ -55,7 +55,7 @@ pipeline {
           dir('review') {
             sh "docker build . -t ${DOCKER_HUB_DIR}/review:${env.BUILD_VERSION}"
             sh "docker push ${DOCKER_HUB_DIR}/review:${env.BUILD_VERSION}"
-          }`
+          }
         }
       }
     }
